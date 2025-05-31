@@ -57,8 +57,9 @@
 
         // --- Available Options ---
         const boardPins = [
-            "A0", "A1", "A2", "A3", "SCK", "MOSI", "MISO", // QTPy RP2040 common pins
-            "SCL", "SDA", "TX", "RX"
+            "D0", "D1", "D4", "D5", "D6", "D9", "D10", "D11", "D12", "D13", // Digital Pins
+            "A0", "A1", "A2", "A3", // Analog Pins (can be used as digital)
+            "SDA", "SCL", "MOSI", "MISO", "SCK", "RX", "TX" // STEMMA/SPI/I2C/UART
         ];
         const hidTypes = ["keyboard", "mouse", "consumer"];
         const keyCodes = [ // Common Keycodes (add more as needed)
